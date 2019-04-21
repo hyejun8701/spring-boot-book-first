@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.controller;
 
 import static org.hamcrest.Matchers.contains;
 import static org.mockito.BDDMockito.given;

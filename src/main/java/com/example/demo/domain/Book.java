@@ -3,6 +3,8 @@ package com.example.demo.domain;
 import java.time.LocalDateTime;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -12,6 +14,8 @@ import lombok.NoArgsConstructor;
 @Getter
 @Entity
 public class Book {
+	@Id
+	@GeneratedValue
 	private Integer idx;
 	private String title;
 	private LocalDateTime publishedAt;
